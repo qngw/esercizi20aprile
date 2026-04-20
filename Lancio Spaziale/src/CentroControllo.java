@@ -6,8 +6,8 @@ public class CentroControllo {
             else
                 System.out.println("\nmissione beta");
 
-            Thread t1 = new Thread(new FaseLancio("controllo Sistemi", 3));
-            Thread t2 = new Thread(new FaseLancio("rifornimento Carburante", 4));
+            Thread t1 = new Thread(new FaseLancio("controllo sistemi", 3));
+            Thread t2 = new Thread(new FaseLancio("rifornimento sarburante", 4));
             Thread t3 = new Thread(new FaseLancio("accensione motori", 2));
 
             t1.start();
