@@ -4,9 +4,9 @@ public class Fabbrica {
         for (int i = 1; i <= 5; i++) {
             System.out.println("\nprodotto " + i);
 
-            Thread t1 = new Thread(new BraccioMeccanico("Saldatura", 3));
-            Thread t2 = new Thread(new BraccioMeccanico("Verniciatura", 2));
-            Thread t3 = new Thread(new BraccioMeccanico("Controllo", 1));
+            Thread t1 = new Thread(new BraccioMeccanico("saldatura", 3));
+            Thread t2 = new Thread(new BraccioMeccanico("verniciatura", 2));
+            Thread t3 = new Thread(new BraccioMeccanico("controllo", 1));
 
             t1.start();
             t1.join();
